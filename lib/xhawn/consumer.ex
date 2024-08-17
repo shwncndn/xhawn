@@ -1,5 +1,4 @@
 defmodule Xhawn.Consumer do
-
   @moduledoc """
   Consumer module
 
@@ -16,9 +15,6 @@ defmodule Xhawn.Consumer do
     MessageCreate,
     VoiceStateUpdate
   }
-
-
-
 
   def handle_event({:MESSAGE_CREATE, msg, _ws_state}) do
     MessageCreate.handle(msg)

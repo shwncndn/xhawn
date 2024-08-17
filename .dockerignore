@@ -1,0 +1,7 @@
+# Ignore Elixir build artifacts
+/_build
+/deps
+
+# Ignore any other files/directories you don't need in the container
+/docker
+/test
