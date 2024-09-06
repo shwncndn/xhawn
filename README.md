@@ -1,12 +1,12 @@
 # Xhawn
 
+hex.pm docs: https://hexdocs.pm/xhawn_bot/0.1.0/api-reference.html
+
 ## Voice channel intro songs and memes at the speed of memes.
 
 Xhawn is a Discord voice and text channel bot that fetches memes from Reddit when prompted and plays your theme song when you entering voice channel - so everyone knows what the score is..
 
-## Feature Quick-Hits:
-
-- Main entry point is `Xhawn.Consumer` - connects to Discord and listens for events.
+Main entry point is `Xhawn.Consumer` - connects to Discord and listens for events:
 
 
 def handle_event({:MESSAGE_CREATE, msg, _ws_state}) do
