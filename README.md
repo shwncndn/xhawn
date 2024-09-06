@@ -1,21 +1,20 @@
 # Xhawn
 
-**TODO: Add description**
+## Voice channel intro songs and memes at the speed of memes.
 
-## Installation
+Xhawn is a Discord voice and text channel bot that fetches memes from Reddit when prompted and plays your theme song when you entering voice channel - so everyone knows what the score is..
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `xhawn` to your list of dependencies in `mix.exs`:
+## Feature Quick-Hits:
 
-```elixir
-def deps do
-  [
-    {:xhawn, "~> 0.1.0"}
-  ]
+- Main entry point is `Xhawn.Consumer` - connects to Discord and listens for events.
+
+
+def handle_event({:MESSAGE_CREATE, msg, _ws_state}) do
+  MessageCreate.handle(msg)
 end
-```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/xhawn>.
+def handle_event({:VOICE_STATE_UPDATE, update, _ws_state}) do
+  VoiceStateUpdate.handle(update)
+end
 
+Incoming events match on `:MESSAGE_CREATE` or `:VOICE_STATE_UPDATE`, depending on if
