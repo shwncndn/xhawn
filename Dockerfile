@@ -25,7 +25,7 @@ RUN mix do deps.get, deps.compile
 COPY . .
 
 # Copy the audio files to the /app/priv/audio directory in the Docker image
-COPY priv/audio/greek.m4a priv/audio/japan.m4a priv/audio/ventura.m4a /app/priv/audio/
+COPY priv/audio/greek.m4a priv/audio/japan.m4a /app/priv/audio/
 
 # Compile the project
 RUN mix compile
