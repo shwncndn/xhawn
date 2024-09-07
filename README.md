@@ -7,6 +7,7 @@
 
 Xhawn is a Discord voice and text channel bot that fetches memes from Reddit when prompted and plays your theme song when you enter a voice channel - so everyone knows what the score is.
 
+
 ## Key Features
 
 - Command handling for text messages
@@ -39,3 +40,5 @@ From the Nostrum docs:
 > By default, nostrum will start a process for each event. This gives us free parallelism and isolation. You therefore do not need to start more than one consumer in your supervision tree.
 
 Starting multiple consumers could lead to several issues such as redudancy (since each process of each consumer is receiving every every event) and compounding API requests, leading to increased resource usage and performance bottlenecks.
+
+For a more details, visit the documentation
