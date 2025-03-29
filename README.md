@@ -3,17 +3,6 @@
 [![Hex.pm](https://img.shields.io/hexpm/v/xhawn_bot.svg)](https://hex.pm/packages/xhawn_bot)
 [![Docs](https://img.shields.io/badge/hex-docs-blue.svg)](https://hexdocs.pm/xhawn_bot/0.1.0/api-reference.html)
 
-## Voice Channel Music and Memes at the Speed of Memes
-
-Xhawn is a Discord voice and text channel bot that fetches memes from Reddit when prompted and plays your theme song when you enter a voice channel - so everyone knows what the score is.
-
-
-## Key Features
-
-- Command handling for text messages
-- Voice channel interaction and audio playback
-- Integration with an external meme API
-- Containerized deployment using Docker
 
 ### Overview
 
